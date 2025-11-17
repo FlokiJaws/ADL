@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebateAI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>DebateAI</h1>
+            <p>Entrez un sujet, et laissez deux IA débattre pour vous.</p>
+        </header>
+
+        <form id="debate-form">
+            <textarea id="topic-input" name="topic" placeholder="Ex: L'humanité devrait-elle coloniser Mars ?"></textarea>
+            <button type="submit">Lancer le débat</button>
+        </form>
+
+        <div id="loading-indicator" style="display: none;">
+            <p>Génération du débat en cours...</p>
+        </div>
+
+        <div id="debate-output">
+            <!-- La conversation du débat sera insérée ici par JavaScript -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
